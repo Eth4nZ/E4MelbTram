@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+#key store
+keystore.properties
+app/src/main/java/rocks/eth4/e4melbtram/utils/PtvKeyStore.java
+
