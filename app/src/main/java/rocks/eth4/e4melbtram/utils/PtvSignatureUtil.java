@@ -30,7 +30,7 @@ public class PtvSignatureUtil {
      *
      */
 
-    public String calculateSignature(final String uri) throws Exception{
+    public static String calculateSignature(final String uri) throws Exception{
         String HMAC_SHA1_ALGORITHM = "HmacSHA1";
         StringBuffer uriWithDeveloperID = new StringBuffer().append(uri).append(uri.contains("?") ? "&" : "?")
                 .append("devid=" + DEVELOPER_ID);
@@ -53,10 +53,10 @@ public class PtvSignatureUtil {
         StringBuffer url = new StringBuffer(BASE_URL).append(uri).append(uri.contains("?") ? "&" : "?")
                 .append("devid=" + DEVELOPER_ID).append("&signature=" + signature.toString().toUpperCase());
 
-        return signature.toString();
+        return signature.toString().toUpperCase();
     }
 
-    public String buildTTAPIURL(final String uri) throws Exception{
+    public static String buildTTAPIURL(final String uri) throws Exception{
 
         String HMAC_SHA1_ALGORITHM = "HmacSHA1";
         StringBuffer uriWithDeveloperID = new StringBuffer().append(uri).append(uri.contains("?") ? "&" : "?")
@@ -85,7 +85,7 @@ public class PtvSignatureUtil {
     }
 
 
-    public String buildTTAPIURL(final String baseURL, final String privateKey, final String uri,
+    public static String buildTTAPIURL(final String baseURL, final String privateKey, final String uri,
                                 final int developerId) throws Exception
     {
 
