@@ -1,4 +1,4 @@
-package rocks.eth4.e4melbtram
+package rocks.eth4.ptv
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -12,9 +12,7 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 
 import kotlinx.android.synthetic.main.activity_main.*
-import org.w3c.dom.Text
-import rocks.eth4.e4melbtram.objects.Model
-import rocks.eth4.e4melbtram.utils.PtvApi
+import rocks.eth4.ptv.utils.PtvApi
 
 class MainActivity : AppCompatActivity() {
 

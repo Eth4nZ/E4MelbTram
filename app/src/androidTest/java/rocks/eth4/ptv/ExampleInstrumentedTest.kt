@@ -1,4 +1,4 @@
-package rocks.eth4.e4melbtram
+package rocks.eth4.ptv
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

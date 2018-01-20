@@ -1,6 +1,5 @@
-package rocks.eth4.e4melbtram.utils
+package rocks.eth4.ptv.utils
 
-import android.util.Log
 import io.reactivex.Observable
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -9,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
-import rocks.eth4.e4melbtram.objects.Model
+import rocks.eth4.ptv.objects.Model
 
 
 /**
