@@ -8,4 +8,14 @@
     tools:context="rocks.eth4.e4melbtram.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <Button
+        android:id="@+id/btn_get_route_types"
+        android:layout_width="185dp"
+        android:layout_height="90dp"
+        android:text="Get Route types"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="77dp">
+
+    </Button>
 </android.support.constraint.ConstraintLayout>

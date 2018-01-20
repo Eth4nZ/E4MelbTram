@@ -16,6 +16,12 @@ buildscript {
 }
 
 allprojects {
+
+    ext {
+        projectVersionCode = 1
+        projectVersionName = '0.1'
+    }
+
     repositories {
         google()
         jcenter()

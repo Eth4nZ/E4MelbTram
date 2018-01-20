@@ -16,6 +16,8 @@ public class PtvSignatureUtil {
     public static String BASE_URL = "https://timetableapi.ptv.vic.gov.au";
     public static String PRIVATE_KEY = PtvKeyStore.PTV_PRIVATE_KEY;
     public static int DEVELOPER_ID = PtvKeyStore.PTV_DEVELOPER_ID;
+    public static String PTV_DEVELOPER_ID_QUERY_NAME = "devid";
+    public static String PTV_SIGNATURE_QUERY_NAME = "signature";
 
 
     /*
