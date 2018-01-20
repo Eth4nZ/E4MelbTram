@@ -18,6 +18,30 @@ import rocks.eth4.e4melbtram.objects.Model
 
 public interface PtvApi {
 
+    @GET("v3/departures/route_type/{route_type}/stop/{stop_id}")
+    fun getAllDepartures(@Path("route_type") route_type: Int,
+                         @Path("stop_id") stop_id: Int,
+                         @Query("platform_numbers") platform_numbers: Array<Int>? = null,
+                         @Query("direction_id") direction_id: Int? = null,
+                         @Query("date_utc") date_utc: String? = null, // Filter by the date and time of the request (ISO 8601 UTC format)
+                         @Query("max_results") max_results: Int? = null,
+                         @Query("gtfs") gtfs: Boolean? = null,
+                         @Query("include_cancelled") include_cancelled: Boolean? = null,
+                         @Query("expand") expand: Array<String>? = null
+    ): Observable<Model.DeparturesResponse>
+
+    @GET("v3/departures/route_type/{route_type}/stop/{stop_id}/route/{route_id}")
+    fun getDeparturesByRouteId(@Path("route_type") route_type: Int,
+                               @Path("stop_id") stop_id: Int,
+                               @Path("route_id") route_id: String,
+                               @Query("direction_id") direction_id: Int? = null,
+                               @Query("date_utc") date_utc: String? = null, // Filter by the date and time of the request (ISO 8601 UTC format)
+                               @Query("max_results") max_results: Int? = null,
+                               @Query("gtfs") gtfs: Boolean? = null,
+                               @Query("include_cancelled") include_cancelled: Boolean? = null,
+                               @Query("expand") expand: Array<String>? = null
+
+    ): Observable<Model.DeparturesResponse>
 
     @GET("v3/route_types")
     fun getRouteTypes(): Observable<Model.RouteTypesResponse>
